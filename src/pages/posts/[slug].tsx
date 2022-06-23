@@ -1,9 +1,5 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import MoreStories from "../../components/more-stories";
-import Header from "../../components/header";
-import SectionSeparator from "../../components/section-separator";
-import Layout from "../../components/layout";
 import { getPostAndMorePosts } from "../../lib/api";
 import PostTitle from "../../components/post-title";
 import Head from "next/head";
@@ -19,7 +15,7 @@ export default function Post({ post, posts, preview }) {
   }
 
   return (
-    <Layout preview={preview}>
+    <>
       <>
         {router.isFallback ? (
           <PostTitle>Loading…</PostTitle>
@@ -44,7 +40,7 @@ export default function Post({ post, posts, preview }) {
           </>
         )}
       </>
-    </Layout>
+    </>
   );
 }
 

@@ -4,7 +4,7 @@ import Container from "./container";
 export default function Header() {
   return (
     <>
-      <div className="flex flex-row items-center justify-between mx-16 mt-8 mb-20">
+      <div className="flex flex-row items-center justify-between mx-4 mt-8 mb-20">
         <h2 className="text-2xl md:text-4xl font-bold">
           <Link href="/">
             <a className="hover:underline">New School Sports</a>
