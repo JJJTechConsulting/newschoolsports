@@ -63,3 +63,14 @@ export interface Post {
     content: HTMLElement;
   };
 }
+
+export interface Author {
+  node: {
+    name: string;
+    firstName: string;
+    lastName: string;
+    avatar: {
+      url: string;
+    };
+  };
+}
