@@ -2,9 +2,9 @@ import Avatar from "../components/avatar";
 import Date from "../components/date";
 import CoverImage from "../components/cover-image";
 import Link from "next/link";
+import { Post } from "../lib/types";
 
-export default function HeroPost({ post }) {
-  console.log(post);
+export default function HeroPost({ post }: Post) {
   return (
     <div className="p-4">
       <div className="mb-2">

@@ -1,9 +1,9 @@
 import styles from "./post-body.module.css";
 
-export default function PostBody({ content }) {
+export default function PostBody({ content }: { content: HTMLElement }) {
   return (
-    <div className="max-w-2xl">
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: content }} />
+    <div className="">
+      <div className={styles.content} dangerouslySetInnerHTML={{ __html: content as unknown as string }} />
     </div>
   );
 }

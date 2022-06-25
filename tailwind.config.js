@@ -1,10 +1,12 @@
 module.exports = {
+  important: true,
   content: ["./src/pages/**/*.{js,ts,jsx,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
         "accent-1": "#FAFAFA",
         "accent-2": "#EAEAEA",
+        "accent-5": "#DDDDDD",
         "accent-7": "#333",
         success: "#0070f3",
         cyan: "#79FFE1",

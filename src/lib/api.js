@@ -68,6 +68,7 @@ export async function getAllPostsForHome(preview) {
             excerpt
             slug
             date
+            content
             featuredImage {
               node {
                 sourceUrl
@@ -128,6 +129,7 @@ export async function getPostAndMorePosts(slug, preview, previewData) {
       excerpt
       slug
       date
+      content
       featuredImage {
         node {
           sourceUrl

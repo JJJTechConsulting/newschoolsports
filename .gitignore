@@ -25,7 +25,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*
+.env
 .env.development.local
 .env.test.local
 .env.production.local
@@ -33,3 +33,4 @@ yarn-error.log*
 # vercel
 .vercel
 src/pages/index.tsx
+.env

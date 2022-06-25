@@ -22,19 +22,13 @@ export default function Post({ post, posts, preview }) {
         ) : (
           <>
             <div className="flex flex-row">
-              <article className="w-2/3">
+              <div className="w-full">
                 <Head>
                   <title>{post.title} | New School Sports</title>
                   <meta property="og:image" content={post.featuredImage?.sourceUrl} />
                 </Head>
                 <PostComponent post={post} />
                 <footer>{post.tags.edges.length > 0 && <Tags tags={post.tags} />}</footer>
-              </article>
-
-              <div className="w-1/3">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae, eum perspiciatis reprehenderit
-                deleniti illo harum corporis, odit totam tenetur nemo adipisci voluptatum vitae exercitationem. Id nulla
-                voluptatem cumque sequi voluptate.
               </div>
             </div>
           </>
