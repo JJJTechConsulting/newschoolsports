@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="mt-16 bg-accent-1 border-t border-accent-2">
       <Container>
-        <div className="py-16 flex flex-col lg:flex-row items-center space-y-8">
+        <div className="py-16 flex flex-col sm:flex-row items-center justify-between space-y-8 sm:space-y-0">
           <div>
             <Logo className="w-48" />
           </div>
