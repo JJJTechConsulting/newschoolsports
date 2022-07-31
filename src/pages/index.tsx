@@ -23,7 +23,7 @@ export default function Index({ allPosts: { edges } }: { allPosts: AllPostsForHo
       </Head>
 
       <div className="">
-        <div className="flex flex-row border rounded-sm bg-white">
+        <div className="flex border rounded-sm bg-white">
           <div className="flex flex-col w-2/3">
             <div className="text-lg lg:text-2xl">
               <HeroPost post={heroPost} />
@@ -37,16 +37,16 @@ export default function Index({ allPosts: { edges } }: { allPosts: AllPostsForHo
               </div>
             </div>
           </div>
-          <div className="flex flex-col w-1/4 p-4">
+          <div className="flex flex-col w-1/3 p-4">
             {nextFive.map((post, index) => (
               <>
                 {index == 0 && (
                   <div className="mb-4">
-                    <Image src={post.node.featuredImage.node.sourceUrl} width={2000} height={1000} />
+                    <Image src={post.node.featuredImage.node.sourceUrl} width={1600} height={900} />
                   </div>
                 )}
-                <div className="flex flex-row items-center space-x-4">
-                  <span className="text-4xl font-bold text-gray-300 font-mono">{++index}</span>
+                <div className="flex flex-row items-center space-x-2">
+                  <span className="text-2xl sm:text-4xl font-bold text-gray-300 font-mono">{++index}</span>
                   <a className="text-sm font-medium" href={`/posts/${post.node.slug}`}>
                     {post.node.title}
                   </a>

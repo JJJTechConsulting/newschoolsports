@@ -13,10 +13,9 @@ export default function Layout({ children }) {
         <div className="min-h-screen">
           {/* <Alert preview={preview} /> */}
           <Container>
-            <div className="flex flex-row py-4">
-              <div className="w-3/4 m-4">{children}</div>
-              <div className="w-1/4 m-4">
-                Placeholder for ads
+            <div className="sm:flex py-4">
+              <div className="sm:w-3/4 m-4">{children}</div>
+              <div className="sm:w-1/4 m-4">
                 <SectionSeparator />
                 <div className="flex flex-wrap justify-center">
                   <div className="text-center text-xs">
