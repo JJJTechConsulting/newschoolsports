@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <Container>
       <div className="flex items-center sm:justify-between px-4 mt-8 mb-4">
-        <h2 className="text-2xl md:text-4xl font-bold">
+        <h2 className="pb-4">
           <Link href="/">
             <div className="flex items-center justify-center">
               <Logo className="w-48" />
